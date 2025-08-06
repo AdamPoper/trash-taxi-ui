@@ -1,0 +1,39 @@
+<div class="home-container">
+    <div class="logo-container">
+        <img src="assets/logo.png" alt="Company Logo" class="logo" />
+    </div>
+
+    <section class="junk-removal">
+
+        <h2>Accepted items</h2>
+        <hr>
+        <div class="list-like">
+            <div>Furniture</div>
+            <div>Mattresses</div>
+            <div>Appliances</div>
+            <div>Yard waste</div>
+            <div>Construction debris</div>
+        </div>
+
+        <img src="assets/pricelist.png" />
+
+        <p>We use a <strong>7' x 12' dump trailer</strong> for larger jobs.</p>
+        <p>Items must be curbside or easily accessible for loading.</p>
+        <p><strong>Reserve your pickup early — limited slots available.</strong></p>
+        <p>Message us with your address and what you need removed for fast service and different time slots.</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-wrapper">
+            <div
+                class="gallery-track"
+                [style.transform]="'translateX(-' + currentSetIndex * 100 + '%)'"
+            >
+                <div class="gallery-set" *ngFor="let imageSet of imageSets">
+                    <img *ngFor="let img of imageSet" [src]="img" alt="Rental Item" />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
