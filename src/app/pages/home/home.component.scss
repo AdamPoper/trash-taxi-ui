@@ -83,3 +83,46 @@
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
 }
+
+.mobile-gallery {
+    width: 100%;
+    display: none;
+
+    .mobile-gallery-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            max-width: 90vw;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.desktop-gallery {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        .logo {
+            width: 80vw;
+        }
+    }
+
+    .junk-removal img {
+        width: 80vw;
+    }
+
+    .mobile-gallery {
+        display: block;
+    }
+
+    .desktop-gallery {
+        display: none;
+    }
+}

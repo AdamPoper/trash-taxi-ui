@@ -23,7 +23,7 @@
         <p>Message us with your address and what you need removed for fast service and different time slots.</p>
     </section>
 
-    <section class="gallery">
+    <section class="gallery desktop-gallery">
         <h2>Gallery</h2>
         <div class="gallery-wrapper">
             <div
@@ -36,4 +36,10 @@
             </div>
         </div>
     </section>
+
+    <div class="mobile-gallery">
+        <div class="mobile-gallery-wrapper">
+            <img *ngFor="let img of flatImageSets" [src]="img" alt="Rental Item"/>
+        </div>
+    </div>
 </div>
