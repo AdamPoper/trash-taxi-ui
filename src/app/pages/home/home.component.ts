@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
 		['assets/gallery/gallery4.jpg', 'assets/gallery/gallery5.jpg', 'assets/gallery/gallery6.jpg']
   	];
 
+	flatImageSets: string[] = this.imageSets.flat();
+
 	currentSetIndex = 0;
 
 	ngOnInit() {
